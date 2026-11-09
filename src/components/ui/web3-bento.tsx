@@ -657,7 +657,7 @@ function GasTile({
           label="Velocidade"
           value={tier}
           options={['Lento', 'Normal', 'Rápido']}
-          onChange={setTier as (v: 'Lento' | 'Normal' | 'Rápido') => void}
+          onChange={setTier}
         />
       </div>
     </Tile>
@@ -740,7 +740,7 @@ function ChartTile({
           label="Período do gráfico"
           value={range}
           options={['1S', '1M', '1A']}
-          onChange={setRange as (v: '1S' | '1M' | '1A') => void}
+          onChange={setRange}
         />
       }
     >
